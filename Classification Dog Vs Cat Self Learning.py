@@ -4,9 +4,9 @@
 Created on Sat Mar 10 17:00:34 2018
 
 @author: Ketul
-
-A simple first project to classify Dog and Cat using CNN
-
+A first project to classify Dog and Cat using CNN:
+Thanks to Venkatesh Tata, Author of an Article 
+"Simple Image Classification using Convolutional Neural Network — Deep Learning in python."
 """
 
 # Importing the Keras libraries and packages
@@ -56,10 +56,10 @@ class_mode = 'binary')
 
 # Fit the model
 classifier.fit_generator(training_set,
-steps_per_epoch = 800,
-epochs = 12,
+steps_per_epoch = 8000,
+epochs = 20,
 validation_data = test_set,
-validation_steps = 200)
+validation_steps = 2000)
 
 
 ### Predict a Dot or Cat from the input image using developed model
