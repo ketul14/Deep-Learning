@@ -40,6 +40,7 @@ classifier.add(Dense(units = 1, activation = 'sigmoid'))
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
 #Most Important - Fitting the CNN model to Images
+# Data folder is the target folder in which train and test folders are created.
 train_datagen = ImageDataGenerator(rescale = 1./255,
 shear_range = 0.2,
 zoom_range = 0.2,
@@ -66,8 +67,8 @@ validation_steps = 2000)
 import numpy as np
 from keras.preprocessing import image
 
-In_image = 'Cat.jpg'
-test_image = image.load_img(In_image, target_size = (64, 64))
+in_image = 'Cat.jpg'
+test_image = image.load_img(in_image, target_size = (64, 64))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
