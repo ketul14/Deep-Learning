@@ -103,3 +103,5 @@ pred_proba = "%.2f%%" % (pred_proba[0][pred]*100)
 
 # Display predicted value
 print(pred[0], "Number", pred_proba)
+
+#######################################################################################
