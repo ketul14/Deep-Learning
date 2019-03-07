@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Created on Sun Mar 11 16:56:24 2018
-@author: Ketul Patel
 A second project to identify the hand written digits using simple Neural Network 
 in Deep Learning . The purpose of this is to learn multiclass handwritten numeric digit classification.
 """
